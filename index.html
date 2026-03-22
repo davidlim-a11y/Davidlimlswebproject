@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Lim | AI & Automation Consultant | SmartReach Marketing PLT</title>
+  <meta name="description" content="David Lim — Co-Founder & CEO of SmartReach Marketing PLT. 28 years helping businesses grow through AI-powered automation, omnichannel engagement, and intelligent digital solutions.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fef2f2',
+              100: '#fee2e2',
+              200: '#fecaca',
+              300: '#fca5a5',
+              400: '#f87171',
+              500: '#ef4444',
+              600: '#dc2626',
+              700: '#b91c1c',
+              800: '#991b1b',
+              900: '#7f1d1d',
+              950: '#450a0a',
+            },
+            navy: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .stat-border { border-image: linear-gradient(to bottom, #dc2626, transparent) 1; }
+    .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .fade-in:nth-child(2) { animation-delay: 0.15s; }
+    .fade-in:nth-child(3) { animation-delay: 0.3s; }
+    .fade-in:nth-child(4) { animation-delay: 0.45s; }
+    .cta-glow { box-shadow: 0 0 30px rgba(220, 38, 38, 0.3); }
+    .cta-glow:hover { box-shadow: 0 0 50px rgba(220, 38, 38, 0.5); }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <img src="images/buddyai-logo.png" alt="BuddyAI" class="w-9 h-9 object-contain">
+        <span class="font-bold text-gray-900 hidden sm:block">SmartReach</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+        <a href="#expertise" class="hover:text-brand-600 transition-colors">Expertise</a>
+        <a href="#results" class="hover:text-brand-600 transition-colors">Results</a>
+        <a href="#mission" class="hover:text-brand-600 transition-colors">Mission</a>
+        <a href="#connect" class="inline-flex items-center gap-2 bg-brand-600 text-white px-5 py-2.5 rounded-lg hover:bg-brand-700 transition-colors">
+          Let's Connect
+        </a>
+      </div>
+      <!-- Mobile menu button -->
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-gray-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-3">
+      <a href="#about" class="block text-sm font-medium text-gray-600 hover:text-brand-600">About</a>
+      <a href="#expertise" class="block text-sm font-medium text-gray-600 hover:text-brand-600">Expertise</a>
+      <a href="#results" class="block text-sm font-medium text-gray-600 hover:text-brand-600">Results</a>
+      <a href="#mission" class="block text-sm font-medium text-gray-600 hover:text-brand-600">Mission</a>
+      <a href="#connect" class="block text-sm font-medium bg-brand-600 text-white px-5 py-2.5 rounded-lg text-center">Let's Connect</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero-gradient pt-32 pb-20 lg:pt-40 lg:pb-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <!-- Text -->
+        <div class="flex-1 text-center lg:text-left">
+          <div class="flex items-center gap-3 mb-6">
+            <img src="images/buddyai-logo.png" alt="BuddyAI" class="w-12 h-12 object-contain">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-brand-300 text-sm font-medium px-4 py-2 rounded-full border border-white/10">
+              <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              Available for partnerships &amp; consulting
+            </div>
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+            Helping Businesses Grow with
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-orange-400">AI-Powered</span>
+            Automation
+          </h1>
+          <p class="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+            I'm <strong class="text-white">David Lim</strong>, Co-Founder &amp; CEO of SmartReach Marketing PLT — with 28 years bridging technology and business growth across Southeast Asia.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <a href="#connect" class="bg-brand-600 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-brand-700 transition-all cta-glow">
+              Work With Me
+            </a>
+            <a href="#about" class="text-gray-300 hover:text-white px-8 py-4 rounded-xl font-medium text-base border border-white/20 hover:border-white/40 transition-all">
+              Learn More
+            </a>
+          </div>
+        </div>
+        <!-- Photo -->
+        <div class="flex-shrink-0">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-br from-brand-600/30 to-orange-500/20 rounded-3xl blur-2xl"></div>
+            <img
+              src="images/profile.png"
+              alt="David Lim — Co-Founder & CEO, SmartReach Marketing PLT"
+              class="relative w-72 sm:w-80 lg:w-96 h-auto rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <section class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-600">28+</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-600">6</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Industry Domains</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-600">AI</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Automation Focus</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-600">MY</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Kuala Lumpur, Malaysia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / PROFESSIONAL JOURNEY ========== -->
+  <section id="about" class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">Professional Journey</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">28 Years Bridging Technology<br class="hidden sm:block"> &amp; Business Growth</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100 fade-in">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-2xl mb-5">🌐</div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">Network &amp; Cloud Infrastructure</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Server administration, cloud architecture, and scalable network solutions for enterprise environments.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100 fade-in">
+          <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-2xl mb-5">☎️</div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">IT Telephony &amp; Communications</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Design and deployment of enterprise communication systems that streamline operations.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100 fade-in">
+          <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-2xl mb-5">📞</div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">Telemarketing Operations</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">End-to-end telemarketing systems that drive revenue through direct customer engagement.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100 fade-in">
+          <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-2xl mb-5">📊</div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">Sales &amp; Marketing Strategy</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Data-driven go-to-market strategies that align sales processes with measurable business outcomes.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100 fade-in">
+          <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-2xl mb-5">🎯</div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">Event Management</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Planning and executing high-impact business events that generate leads and build brand authority.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100 fade-in">
+          <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-2xl mb-5">🚀</div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">Business Development</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Identifying growth opportunities and forging strategic partnerships that accelerate expansion.</p>
+        </div>
+      </div>
+      <!-- Differentiator callout -->
+      <div class="mt-12 bg-white rounded-2xl p-8 md:p-10 border border-gray-100 max-w-3xl mx-auto text-center">
+        <p class="text-gray-600 leading-relaxed text-lg">
+          What makes my journey unique is that I have <strong class="text-gray-900">worked across both technical infrastructure and business growth</strong>, allowing me to bridge the gap between <strong class="text-gray-900">technology implementation and real business value</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AI IMPLEMENTATION / RESULTS ========== -->
+  <section id="results" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left: Content -->
+        <div>
+          <p class="text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">Real-World Results</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">AI-Powered Omnichannel Solutions That Deliver</h2>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            I help businesses successfully onboard <strong class="text-gray-900">Omnichannel Chat platforms integrated with AI Agent Lab</strong> — transforming how they engage customers and generate revenue.
+          </p>
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-lg flex-shrink-0 mt-0.5">💬</div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Automated Conversations</h4>
+                <p class="text-gray-500 text-sm">Automate customer conversations across multiple channels simultaneously.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-lg flex-shrink-0 mt-0.5">⚡</div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Faster Response Times</h4>
+                <p class="text-gray-500 text-sm">Dramatically improve response speed and customer engagement rates.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-lg flex-shrink-0 mt-0.5">📈</div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Qualified Lead Generation</h4>
+                <p class="text-gray-500 text-sm">Generate more qualified sales leads with intelligent AI-driven qualification.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-lg flex-shrink-0 mt-0.5">🤝</div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Customer Experience at Scale</h4>
+                <p class="text-gray-500 text-sm">Deliver consistent, high-quality customer experiences without scaling headcount.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Testimonial / Quote card -->
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-br from-brand-100 to-orange-50 rounded-3xl blur-xl opacity-60"></div>
+          <div class="relative bg-white rounded-2xl p-10 border border-gray-100 shadow-lg">
+            <svg class="w-10 h-10 text-brand-200 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z"/></svg>
+            <p class="text-xl font-medium text-gray-800 leading-relaxed mb-8">
+              Seeing companies transform their <strong>sales and customer engagement through AI automation</strong> has been one of the most rewarding parts of my career.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <img src="images/profile.png" alt="David Lim" class="w-12 h-12 rounded-full object-cover object-top bg-gray-100">
+                <div>
+                  <div class="font-bold text-gray-900">David Lim</div>
+                  <div class="text-sm text-gray-500">Co-Founder &amp; CEO, SmartReach</div>
+                </div>
+              </div>
+              <img src="images/buddyai-logo.png" alt="Powered by BuddyAI" class="w-14 h-14 object-contain opacity-80">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK ETHIC ========== -->
+  <section class="py-20 lg:py-24 hero-gradient">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="text-5xl mb-6">✨</div>
+      <blockquote class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
+        "If I give my word,<br>I deliver."
+      </blockquote>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        Integrity, commitment, and reliability are the foundation of how I build <strong class="text-white">long-term partnerships and successful projects</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== EXPERTISE / WHY PROMPT ENGINEERING ========== -->
+  <section id="expertise" class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Left column -->
+        <div>
+          <p class="text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">Forward-Thinking</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Prompt Engineering &amp; AI Agents Will Redefine Business</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            I strongly believe Prompt Engineering and AI Agents will redefine how businesses operate in the next decade. I actively participate in the Prompt Engineering community with a clear mission:
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100">
+              <span class="text-2xl">🧠</span>
+              <span class="font-medium text-gray-800">Learn from talented innovators</span>
+            </div>
+            <div class="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100">
+              <span class="text-2xl">⚙️</span>
+              <span class="font-medium text-gray-800">Develop practical AI solutions</span>
+            </div>
+            <div class="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100">
+              <span class="text-2xl">🤝</span>
+              <span class="font-medium text-gray-800">Collaborate with forward-thinking professionals</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right column: Mission -->
+        <div id="mission">
+          <p class="text-green-600 font-semibold text-sm uppercase tracking-widest mb-3">My Mission</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Empowering Malaysian SMEs with AI</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Many SMEs still see AI as something complex, expensive, or out of reach. I'm passionate about changing that.
+          </p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <span class="text-gray-700">Educate businesses about AI opportunities</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <span class="text-gray-700">Help SMEs implement practical AI solutions</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <span class="text-gray-700">Empower companies to grow through intelligent automation</span>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-brand-50 to-orange-50 rounded-2xl p-8 border border-brand-100">
+            <p class="text-gray-800 font-semibold leading-relaxed text-lg">
+              "AI should not only be for big corporations — it should empower every SME to innovate, compete, and thrive."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA / CONNECT ========== -->
+  <section id="connect" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">Let's Connect</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">Ready to Transform Your Business with AI?</h2>
+      <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        Whether you're looking to automate customer engagement, implement AI solutions, or explore how technology can drive your growth — I'd love to hear from you.
+      </p>
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+          <div class="text-3xl mb-4">💡</div>
+          <h4 class="font-bold text-gray-900 mb-2">Share Insights</h4>
+          <p class="text-gray-500 text-sm">Real-world AI implementation experiences</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+          <div class="text-3xl mb-4">🤖</div>
+          <h4 class="font-bold text-gray-900 mb-2">Build Together</h4>
+          <p class="text-gray-500 text-sm">Impactful AI solutions for your business</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+          <div class="text-3xl mb-4">🌍</div>
+          <h4 class="font-bold text-gray-900 mb-2">Transform</h4>
+          <p class="text-gray-500 text-sm">Intelligent automation that delivers results</p>
+        </div>
+      </div>
+      <a href="mailto:david@smartreach.my" class="inline-flex items-center gap-3 bg-brand-600 text-white px-10 py-5 rounded-xl font-semibold text-lg hover:bg-brand-700 transition-all cta-glow">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Get In Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-navy-950 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="images/buddyai-logo.png" alt="BuddyAI" class="w-10 h-10 object-contain">
+          <div>
+            <div class="font-bold text-white">David Lim</div>
+            <div class="text-sm text-gray-500">Co-Founder &amp; CEO, SmartReach Marketing PLT</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 text-sm">
+          <span>📍</span>
+          <span>Kuala Lumpur, Malaysia</span>
+          <span class="ml-1">🚀</span>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-600">
+        &copy; 2026 SmartReach Marketing PLT. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
